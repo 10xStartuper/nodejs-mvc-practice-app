@@ -1,20 +1,30 @@
 {
-  "name": "nodejs-mvc-in-practise",
-  "version": "1.0.0",
-  "description": "MVC Project using node-js",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "JavaScript",
-    "MVC",
-    "Node-js",
-    "MongoDB",
-    "Sass",
-    "Express",
-    "ejs"
-  ],
-  "author": "Mukhammadyusuf Abdurakhimov",
-  "license": "MIT"
+    "name": "nodejs-mvc-in-practise",
+    "version": "1.0.0",
+    "description": "MVC Project using node-js, online library",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "devStart": "nodemon app.js"
+    },
+    "keywords": [
+        "JavaScript",
+        "MVC",
+        "Node-js",
+        "MongoDB",
+        "Sass",
+        "Express",
+        "ejs",
+        "Online library project"
+    ],
+    "author": "Mukhammadyusuf Abdurakhimov",
+    "license": "MIT",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "express-ejs-layouts": "^2.5.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
 }
