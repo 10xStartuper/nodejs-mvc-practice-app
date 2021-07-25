@@ -3,7 +3,13 @@ const router = express.Router()
 const Author = require('../models/author')
 
 // All Authors Route 
-router.get('/', (req, res) => {
+router.get('/', async(req, res) => {
+    try {
+        const authors = await Author.find({})
+        res.render('authors/index', { authors: authors })
+    } catch {
+        res.render('authors/index', { errMessage: 'Err occured while reading from database' })
+    }
     res.render('authors/index')
 });
 

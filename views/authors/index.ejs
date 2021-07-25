@@ -1,1 +1,21 @@
-List of all authors here
+<br>
+<div class="container">
+    <h2>List of Authors</h2>
+    <div class="row">
+        <% authors.forEach(author => { %>
+            <div class="col-md-6">
+                <div class="card bg-light text-dark" style="width: 100%; margin: 15px auto">
+                    <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= author.name%>
+                        </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="/authors/<%=author._id%>" class="btn btn-primary">Go to Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <% }) %>
+    </div>
+</div>
