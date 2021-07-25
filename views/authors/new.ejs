@@ -1,8 +1,9 @@
 <div class="container">
-    <h1>Add New Author</h1>
-    <form action="/authors" method="POST">
-        <%- include('../partials/utils/_form_fields.ejs') %>
-            <a href="/authors"><button type="submit" class="btn btn-light">Cancel</button></a>
-            <button type="submit" class="btn btn-success">Add new</button>
-    </form>
+    <%- include('../partials/errMessage.ejs')%>
+        <h1>Add New Author</h1>
+        <form action="/authors" method="POST">
+            <%- include('../partials/utils/_form_fields.ejs') %>
+                <a href="/authors"><button type="submit" class="btn btn-light">Cancel</button></a>
+                <button type="submit" class="btn btn-success">Add new</button>
+        </form>
 </div>
