@@ -1,5 +1,18 @@
 <br>
 <div class="container">
+    <div>
+        <form action="/authors" method="GET">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><i data-feather="search"></i></div>
+                    </div>
+                    <input type="text" name="name" class="form-control" id="searchInput" placeholder="Author's name" value="<%= searchOptions.name %>">
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
     <h2>List of Authors</h2>
     <div class="row">
         <% authors.forEach(author => { %>
@@ -7,11 +20,19 @@
                 <div class="card bg-light text-dark" style="width: 100%; margin: 15px auto">
                     <!-- <img class="card-img-top" src="" alt="Card image cap"> -->
                     <div class="card-body">
-                        <h5 class="card-title">
-                            <%= author.name%>
-                        </h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="/authors/<%=author._id%>" class="btn btn-primary">Go to Profile</a>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="https://avatars.githubusercontent.com/u/59238478?v=4" alt="" width="100%">
+                            </div>
+                            <div class="col-8">
+                                <h5 class="card-title">
+                                    <%= author.name%>
+                                </h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="/authors/<%=author._id%>" class="btn btn-primary">Go to the page</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
