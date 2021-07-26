@@ -1,4 +1,5 @@
 # nodejs-mvc-practice-app
 - [x] Project Setup
-- [ ] Author's Index/Create/New Routes
+- [x] Author's Index/Create/New Routes
+- [ ] Books Index/Create/New Routes
 - [ ] etc.
